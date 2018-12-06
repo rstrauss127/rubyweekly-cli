@@ -10,6 +10,7 @@ class RubyWeeklyScraper
 
   def scrape
     scrape_details
+    scrape_articles
     @newsletter #=> This instance should have a bunch of articles and details
   end
 
