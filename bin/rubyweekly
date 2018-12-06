@@ -1,10 +1,4 @@
 #!/usr/bin/env ruby
 require_relative '../config/environment'
-puts "WElcome to RubyWeekly!!"
 
-s = RubyWeeklyScraper.new(286)
-newsletter = s.scrape
-
-newsletter.articles.each.with_index(1) do |a, i|
-  puts "#{i}. #{a.title}"
-end
+RubyWeeklyController.new.call
